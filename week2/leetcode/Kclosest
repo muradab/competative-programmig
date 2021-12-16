@@ -1,3 +1,4 @@
+import math
 class Solution:
     def calculateSqrt(self, i):
         ans = math.sqrt(i[0]**2 + i[1]**2)
