@@ -16,3 +16,9 @@ class Solution:
                 
                 nums[index] , nums[i] = nums[i] , nums[index]
                 index += 1
+
+solution = Solution()
+list = [1,2,0,5,0,6,0,8,9,10,11]
+print(list)
+s = solution.moveZeroes(list)
+print(list)

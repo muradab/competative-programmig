@@ -11,3 +11,9 @@ class Solution:
 
         for i in range(len(nums)):
             nums[i] = temp[i]
+
+solution = Solution()
+list = [1,2,5,6,8,9,10,11]
+
+s = solution.rotate(list,6)
+print(list)

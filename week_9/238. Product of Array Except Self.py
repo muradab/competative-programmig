@@ -22,10 +22,14 @@ class Solution:
         
 #       now multiply the right product to the output you get above
         product = 1
-        for i in range(len(nums)-1 ,-1 ,-1):
-            
-            
+        for i in range(len(nums)-1 ,-1 ,-1): 
             answer[i] *= product
             product *= nums[i]
         return answer  
+
+solution = Solution()
+list = [1,2,5,6,8,9,10,11,0]
+
+s = solution.productExceptSelf(list)
+print(s)
             

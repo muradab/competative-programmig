@@ -26,5 +26,13 @@ class Solution:
                 current = current.next
 
         return dummy.next
+def printList(head):
+    while(head):
+        print(head.val)
+        head = head.next
 
-        
+solution = Solution()
+head = ListNode(1,next=ListNode(2,ListNode(2,ListNode(3,ListNode(4)))))
+printList(head)
+s = solution.deleteDuplicates(head)
+printList(s)

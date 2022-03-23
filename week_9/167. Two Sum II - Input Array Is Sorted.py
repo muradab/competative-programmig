@@ -15,7 +15,7 @@ class Solution:
         right = len(numbers) - 1 
         result = []
         while left < right :
-            print(left,right)
+            
             sum_ = numbers[left] + numbers[right]
             if sum_== target:
                 result.append(left+1)
@@ -26,3 +26,11 @@ class Solution:
                 
             else :
                 left += 1
+
+
+
+solution = Solution()
+list = [1,2,5,6,8,9,10,11]
+
+s = solution.twoSum(list,16)
+print(s)

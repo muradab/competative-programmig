@@ -23,5 +23,12 @@ class Solution:
             
             if count - k in preCount:
                 answer += preCount[count - k]
-            
+            print(preCount)
+            print(answer)
         return answer
+
+solution = Solution()
+list = [1,2,5,6,9,10,11,0]
+
+s = solution.numberOfSubarrays(list,2)
+print(s)
