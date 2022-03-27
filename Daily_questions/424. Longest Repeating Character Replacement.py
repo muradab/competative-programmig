@@ -9,17 +9,14 @@ class Solution:
         start = 0
         end = 0
         answer = 0
-        max_ = 0
         
         while end < len(s):
             if s[end] in dict_:
                 dict_[s[end]] += 1
             else :
                 dict_[s[end]] = 1
-                
-            max_ = max(max_,dict_[s[end]])
             
-            while (end-start+1) - max_ > k:
+            while (end-start+1) - max(dict_.values()) > k:
                 dict_[s[start]] -= 1
                 start += 1
             
